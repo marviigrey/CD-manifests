@@ -7,7 +7,7 @@ metadata:
   labels:
     app: nginx
   name: nginx
-  namespace: default
+  
   resourceVersion: "1180958"
   uid: f44625c5-3476-48f6-9750-0aa25c037fda
 spec:
