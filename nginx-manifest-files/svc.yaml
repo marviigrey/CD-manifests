@@ -6,16 +6,8 @@ metadata:
     app: nginx
   name: test-svc
   
-  resourceVersion: "2149497"
-  uid: bebce582-08e4-4c0d-ab82-68d680b6acb1
+  
 spec:
-  clusterIP: 10.100.161.113
-  clusterIPs:
-  - 10.100.161.113
-  internalTrafficPolicy: Cluster
-  ipFamilies:
-  - IPv4
-  ipFamilyPolicy: SingleStack
   ports:
   - port: 80
     protocol: TCP
@@ -23,6 +15,6 @@ spec:
   selector:
     app: nginx
   sessionAffinity: None
-  type: ClusterIP
+  type: NodePort
 status:
   loadBalancer: {}
